@@ -1,0 +1,119 @@
+body,
+html {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  cursor: url("/assets/img/trans.cur"), auto;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  text-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+}
+
+.bio {
+  font-size: 1.2rem;
+  line-height: 3px;
+}
+
+.link {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+i,
+span {
+  color: #fff;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.title {
+  margin: 0;
+  line-height: 60px;
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+.avatar {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 20px #cdbeeb;
+}
+
+.icons {
+  color: #fff;
+  transition: all .2s;
+  padding-top: 3px;
+  -webkit-transition: all .2s;
+}
+
+.icons:hover {
+  opacity: 0.7;
+  transition: all .2s;
+  -webkit-transition: all .2s;
+}
+
+/* Background */
+
+.stars,
+.twinkling {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.stars {
+  background: #000 url("/assets/img/stars.png") repeat top center;
+}
+
+.twinkling {
+  z-index: 1;
+  background: transparent url("/assets/img/twinkle.png") repeat top center;
+  animation: move-twinkle-back 180s linear infinite;
+  -moz-animation: move-twinkle-back 180s linear infinite;
+  -ms-animation: move-twinkle-back 180s linear infinite;
+  -o-animation: move-twinkle-back 180s linear infinite;
+  -webkit-animation: move-twinkle-back 180s linear infinite;
+}
+
+@keyframes move-twinkle-back {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+@-webkit-keyframes move-twinkle-back {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: -10000px 5000px;
+  }
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% if page.redirect %}
+  <meta http-equiv="refresh" content="3; url={{ page.redirect }}">{% endif %}
+  <link href="/assets/img/favicon.png" type="image/png" rel="icon">
+  <title>{% if page.redirect %}Redirecting...{% else %}Error{% endif %}</title>
+</head>
+
+<body>
+  {% if page.redirect %}
+  <p>Taking you to your destination...</p>
+  <p>If you aren't redirected, click <a href="{{ page.destination }}">here</a>.</p>
+
+  {% else %}
+  <p>Failed to redirect, or nothing's setup to! Dummy!</p>
+  {% endif %}
+</body>
+
+</html>

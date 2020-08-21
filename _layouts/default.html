@@ -1,0 +1,17 @@
+---
+layout: minify
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% include head.html %}
+  <title>{% if page.title %}{{ page.title }}{% else %}lesbian.codes{% endif %}</title>
+</head>
+
+<body>
+  {{ content }}
+</body>
+
+</html>

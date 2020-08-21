@@ -1,0 +1,28 @@
+title: lesbian.codes
+description: Ramblings from a dumb girl on the internet.
+permalink: /blog/:year/:title/
+
+compress_html:
+  comments: all
+
+exclude:
+  - .editorconfig
+  - .gitignore
+  - .gitattributes
+  - .jsbeautifyrc
+  - CNAME
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+
+kramdown:
+  auto_ids: false
+
+paginate: 5
+paginate_path: "/blog/page:num/"
+
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap
